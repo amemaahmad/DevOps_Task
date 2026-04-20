@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet Crumbs Bakery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff1f7;
+      color: #5e3b42;
+    }
+
+    header {
+      background: linear-gradient(90deg, #f7b2d9, #fcd3e1);
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 38px;
+      color: #4b1c2b;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #f29bc0;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4b1c2b;
+      text-decoration: underline;
+    }
+
+    .welcome {
+      text-align: center;
+      padding: 70px 20px;
+      background-color: #ffe4ef;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .welcome h2 {
+      font-size: 34px;
+      color: #4b1c2b;
+      margin-bottom: 10px;
+    }
+
+    .welcome p {
+      font-size: 18px;
+      color: #653e45;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    
+    .cake-left, .cake-right {
+      position: absolute;
+      top: 50%;
+      width: 120px;
+      transform: translateY(-50%) rotate(-15deg);
+      opacity: 0.9;
+      border-radius: 70%;
+    }
+
+    .cake-right {
+      right: 50px;
+      transform: translateY(-50%) rotate(15deg);
+    }
+
+    .cake-left {
+      left: 50px;
+    }
+
+    .featured {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 50px 20px;
+      background-color: #fff8fb;
+    }
+
+    .item {
+      background-color: white;
+      width: 250px;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .item h3 {
+      margin: 10px 0 5px;
+      color: #4b1c2b;
+    }
+
+    .news {
+      background-color: #ffd9ec;
+      padding: 40px 20px;
+    }
+
+    .news h2 {
+      text-align: center;
+      color: #4b1c2b;
+    }
+
+    .news p {
+      text-align: center;
+      font-size: 17px;
+      color: #5a3d45;
+    }
+
+    footer {
+      background-color: #f7b2d9;
+      text-align: center;
+      padding: 15px;
+      font-size: 16px;
+      color: #4b1c2b;
+    }
+
+    footer a {
+      color: #4b1c2b;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sweet Crumbs Bakery</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="welcome">
+    <img src="images/cakiee.jpg" alt="Cake Decoration" class="cake-left">
+    <img src="images/cakiee.jpg" alt="Cake Decoration" class="cake-right">
+    <h2>Welcome to Sweet Crumbs!</h2>
+    <p>Freshly baked love in every bite — cakes, pastries, and cookies made just for you </p>
+  </section>
+
+  <section class="featured">
+    <div class="item">
+      <img src="images/cupcake.jpg" alt="Cupcake">
+      <h3>Vanilla Cupcakes</h3>
+      <p>Soft, creamy, and delightful — our best seller!</p>
+    </div>
+
+    <div class="item">
+      <img src="images/cake.jpg" alt="Cake">
+      <h3>Chocolate Cake</h3>
+      <p>Rich and moist chocolate layers with love.</p>
+    </div>
+
+    <div class="item">
+      <img src="images/cookies.jpg" alt="Cookies">
+      <h3>Butter Cookies</h3>
+      <p>Crispy edges and melt-in-mouth flavor!</p>
+    </div>
+
+    <div class="item">
+      <img src="images/pizza_Bread.jpg" alt="Pizza Bread">
+      <h3>Pizza Bread</h3>
+      <p>Cheesy, soft, and perfect for savory lovers!</p>
+    </div>
+  </section>
+
+  <section class="news">
+    <h2>Latest Updates</h2>
+    <p>We now deliver across the city! Visit us for our new festive flavors and custom cake options</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sweet Crumbs Bakery | 
+    <a href="#">Instagram</a> | 
+    <a href="#">Facebook</a> | 
+    <a href="#">Contact Us</a></p>
+  </footer>
+
+</body>
+</html>
